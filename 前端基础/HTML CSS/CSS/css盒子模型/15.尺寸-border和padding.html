@@ -1,0 +1,23 @@
+<!-- 需求：盒子尺寸240*300，背景粉色，边框10px实线黑色，上下左右20px内边距 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>尺寸-border和padding</title>
+    <style>
+        div{
+            /* 能够撑大盒子：border padding 计算尺寸要减掉 */
+            width: 240px;
+            height: 240px;
+            background-color: pink;
+            border: 10px solid black;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div>文字</div>
+</body>
+</html>

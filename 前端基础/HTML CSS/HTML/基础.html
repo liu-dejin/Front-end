@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>基础</title>
+</head>
+
+<body>
+    <h1>1.列表标签</h1>
+    <!-- 列表标签布局内容排列整齐的区域-->
+    <!-- 无序列表 多数 -->
+    <!-- ul为无序标签的整体只允许包含<li></li>  父子关系  默认显示小圆点
+    li为无序列表的每一项  用于包含每一行的内容
+     li可以包含任何内容 -->
+
+    <ul>
+        <li>西瓜</li>
+        <li>苹果</li>
+        <li>香蕉</li>
+    </ul>
+    <br>
+    <!-- 有序列表 -->
+    <!-- ol为有序标签 只允许包含<li></li>  默认显示序号标识
+    li为无序列表的每一项  用于包含每一行的内容 -->
+    <ol>
+        <li>张三：11</li>
+        <LI>李四：80</LI>
+    </ol>
+    <br>
+    <!-- 定义列表 -->
+    <!-- dl表示自定义列表的整体 包含dt/dd标签 父子关系
+    dt/dd标签可以包含任何内容
+    dt 表示主题
+    dd 表示针对主题的每一项内容
+    dd前默认显示缩进效果
+    后期css优化
+    -->
+    <dl>
+        <dt>帮助中心</dt>
+        <dd>账户管理</dd>
+        <dd>购物指南</dd>
+    </dl>
+
+</body>
+
+<body>
+    <h1>2.表格标签</h1>
+    <!-- 1表格标签基本标签 -->
+    <!-- table表示表格整体，可以包含多个tr
+    tr表示表格每行，可用于包含td
+    td表示表格单元格 包含内容
+    嵌套关系  table>tr>td/th
+     -->
+    <table>
+        <tr>
+            <td>姓名</td>
+            <td>成绩</td>
+            <td>评语</td>
+        </tr>
+        <tr>
+            <td>小哥哥</td>
+            <td>100分</td>
+            <td>小哥哥真帅气</td>
+        </tr>
+        <tr>
+            <td>小姐姐</td>
+            <td>100</td>
+            <td>小姐姐真漂亮</td>
+        </tr>
+    </table>
+    <br>
+    <!-- 2表格的相关属性 -->
+    <!-- 表格默认是没有边框的，用border属性 数字 边框宽度  width和heigh 宽高
+    实际开发推荐用css设计
+    -->
+    <table border="1" width="255" height="255">
+        <tr>
+            <td>张云雷</td>
+            <td>德云社</td>
+            <td>帅气</td>
+        </tr>
+    </table>
+    <br>
+    <!-- 3表格标题和表头单元格标签 -->
+
+    <!--
+     caption为表格大标题 可用前面格式化标签美化 写在table标签内部  嵌套
+    th为表头单元格  直接替换td
+     -->
+    <table border="1" width="255" height="255">
+        <caption><strong>学生成绩单</strong></caption>
+        <tr>
+            <th>姓名</th>
+            <th>分数</th>
+            <th>评价</th>
+        </tr>
+        <tr>
+            <td>郭德纲</td>
+            <td>100分</td>
+            <td>相声演员</td>
+        </tr>
+        <tr>
+            <td>小哥哥</td>
+            <td>100分</td>
+            <td>小哥哥真帅气</td>
+        </tr>
+        <tr>
+            <td>小姐姐</td>
+            <td>100</td>
+            <td>小姐姐真漂亮</td>
+        </tr>
+    </table>
+    <br>
+    <!-- 4表格的结构标签（了解） -->
+    <!-- 突出表格的不同部分
+    thead 表格头部   tbody 表格的主题  tfoot表格底部
+    表格结构标签内部用于包裹tr标签
+    可以省略
+    -->
+    <table border="1" width="255">
+        <caption><strong>学生成绩单</strong></caption>
+        <thead>
+            <tr>
+                <th>姓名</th>
+                <th>成绩</th>
+                <th>评语</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>小哥哥</td>
+                <td>100分</td>
+                <td>小哥哥真帅气</td>
+            </tr>
+            <tr>
+                <td>小姐姐</td>
+                <td>100分</td>
+                <td>小姐姐真漂亮</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>总结</td>
+                <td>郎才女貌</td>
+                <td>郎才女貌</td>
+            </tr>
+        </tfoot>
+    </table>
+    <br>
+    <!-- 5.合并单元格 -->
+    <!-- 将水平和垂直多个单元格合并成一个单元格
+    明确合并那几个
+    左上原则确定保留和删除目标
+    给保留的单元格设置 跨行合并（rowspan） 跨行合并（colspan）
+    不能跨结构标签合并（不能跨thead tbody tfoot）
+    -->
+    <table border="1" width="255">
+        <caption><strong>学生成绩单</strong></caption>
+        <thead>
+            <tr>
+            <tr>
+                <th>姓名</th>
+                <th>成绩</th>
+                <th>评语</th>
+            </tr>
+            <tr>
+                <td>小哥哥</td>
+                <td rowspan="2">100分</td>
+                <td>小哥哥真帅气</td>
+            </tr>
+            <tr>
+                <td>小姐姐</td>
+                <td>小姐姐真漂亮</td>
+            </tr>
+            <tr>
+                <td>总结</td>
+                <td colspan="2">郎才女貌</td>
+            </tr>
+    </table>
+    <br>
+    <table border="1" width="255" height="255">
+        <caption><strong>班级信息</strong></caption>
+        <tr>
+            <th>姓名</th>
+            <th>年龄</th>
+            <th>性别</th>
+        </tr>
+        <tr>
+            <td>牛牛</td>
+            <td rowspan="2">19</td>
+            <td>男</td>
+        </tr>
+        <tr>
+            <td>刘</td>
+            <td>女</td>
+        </tr>
+        <tr>
+            <td>总结</td>
+            <td colspan="2">郎才女貌</td>
+        </tr>
+    </table>
+</body>
+
+</html>

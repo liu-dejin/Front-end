@@ -1,0 +1,47 @@
+<!-- 两个弹性盒子垂直排列  修改主轴方向
+ flex-direction 该变主轴默认方向  默认垂直
+水平方向左-右（默认）
+垂直方向上-下（最常用）
+水平方向右-左
+垂直方向下-上-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>修改主轴方向</title>
+  <style>
+    .box {
+      /* 两个弹性盒子垂直排列 图文上下居中排列 */
+      display: flex;
+
+      /* 修改主轴方向 垂直方向  侧轴自动变换到水平方向 */
+      flex-direction: column;
+
+      /* 主轴在垂直 视觉效果  垂直居中 */
+      justify-content: center;
+
+      /* 侧轴在水平   视觉效果  水平居中 */
+      align-items: center;
+      width: 150px;
+      height: 120px;
+      background-color: pink;
+    }
+
+    img {
+      width: 32px;
+      height: 32px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <img src="../images/甘城(1).jpg" alt="老婆">
+    <span>媒体</span>
+  </div>
+</body>
+
+</html>
