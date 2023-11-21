@@ -1,0 +1,74 @@
+<!-- 抽取 封装 代码复用
+执行特定任务的代码块
+比如alert() console.log() 都是一些js函数  直接用 -->
+<!-- function(){
+  函数体
+} -->
+<!-- 命名规范 和变量一致  小驼峰  尽量用动词
+can 判断是否可执行的某个动作
+has判断是否含义某个值
+is 判断是否为某个值
+get获取某个值
+set设置某个值
+load加载某些数据-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>函数的基本使用和封装</title>
+</head>
+
+<body>
+  <!-- <script>
+    function sheet99() {
+      //外层循环控制行数
+      for (let i = 1; i <= 9; i++) {
+        //里层循环控制列数(几颗星星)
+        for (let j = 1; j <= i; j++) {
+          document.write(`<span>${j}×${i}=${j * i}</span>`)
+        }
+        document.write('<br>')
+      }
+    }
+    //调用
+    sheet99()
+    sheet99()
+  </script> -->
+  <script>
+    // let num = 20
+    // console.log(num)
+    //1.函数的声明
+    function sayhi() {
+      console.log('hi~~~')
+    }
+    //2.调用，函数调用才能执行    可多次调用
+    sayhi()
+    sayhi()
+    sayhi()
+  </script>
+  <!-- <script>
+    //两个数的和
+    function getSum() {
+      let num1 = +prompt('请输入第一个数')
+      let num2 = +prompt('请再输入一个数')
+      console.log(num1 + num2)
+    }
+    getSum()
+
+    // 1-100和
+    function getSum() {
+      let sum = 0
+      for (let i = 1; i <= 100; i++) {
+        sum += i
+      }
+      console.log(sum)
+    }
+    getSum()
+  </script> -->
+</body>
+
+</html>

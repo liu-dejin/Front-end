@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <ul>
+    <li>第1个孩子</li>
+    <li>第2个孩子</li>
+    <li>第3个孩子</li>
+    <li>第4个孩子</li>
+    <li>第5个孩子</li>
+    <p>我不需要变色</p>
+  </ul>
+  <script>
+    //事件委托
+    // 减少注册次数,提高性能
+    // 原理:利用元素冒泡,给父元素添加注册事件
+
+    // 点击每一个li 变红色
+
+    const ul = document.querySelector('ul')
+    ul.addEventListener('click', function (e) {
+      // alert(111)
+      // this.style.color = 'red'
+      console.dir(e.target)  //就是我点击的那个对象
+      // e.target.style.color = 'red'
+
+      // 只需要点击li才会变色
+      if (e.target.tagName === 'LI') {
+        e.target.style.color = 'red'
+      }
+
+      1我这里有很多文字我这里有很多文字我这里有很多文字我这里有很多文字我这里有很多文字我这里有很多文字我这里有很多文字我这里有很多文字我这里有很多文字我这里有很多文字我这里有很多文字我这里有很多文字我这里有很多文字我这里有很多文字我这里有很多文字我这里有很多文字我这里有很多文字我这里有很多文字我这里有很多文字我这里有很多文字我这里有很多文字我这里有很多文字我这里有很多文字我这里有很多文字我这里有很多文字我这里有很多文字我这里有很多文字我这里有很多文字我这里有很多文字我这里有很多文字我这里有很多文字我这里有很多文字我这里有很多文字我这里有很多文字我这里有很多文字
+
+    })
+  </script>
+</body>
+
+</html>

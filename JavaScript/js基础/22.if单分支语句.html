@@ -1,0 +1,56 @@
+<!-- 表达式是可以被求值的代码，js可以将其计算出一个结果  可以求值，可以写在赋值语句的右侧
+语句是一段可以执行的代码  语句不一定有值
+某些情况下，也可以把表达式理解为表达式语句因为他是在计算结果  但不是必须的成分（比如continue语句） -->
+<!-- 程序三大流程控制语句  以前写代码 写几句就从上往下执行几句  这种的叫顺序结构 -->
+<!-- 根据条件选择执行代码  分支结构 -->
+<!-- 某些代码被重复执行  循环结构 -->
+<!-- if单分支    if（条件）{
+    满足条件要执行的代码
+}
+括号为true时，进入大括号里执行代码
+小括号内的结果不是布尔类型会发生隐式转换为布尔类型
+如果大括号只有一个语句，大括号可以省略，但是，我们不提倡这么做~
+ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>if单分支语句</title>
+  </head>
+  <body>
+    <script>
+      //单分支语句
+      // if (true) {
+      //   console.log('执行语句')
+      // }
+      // if (3>5) {
+      //   console.log('执行语句')
+      // }  //不执行
+      // if (2==='2'){
+      //   console.log('执行语句'); //不执行
+      // }
+      //除了 0 了所有数字都为真
+      // if (0){
+      //   console.log('执行语句');
+      // }
+      //除了''所有的字符串都为真
+      // if ('kis2') {
+      //   console.log('执行语句')
+      // }
+      if ('') {
+        console.log('执行语句')
+      } //不执行
+      if ('') console.log('执行语句')   //可以但不提倡
+      console.log('`````````````````````````````');
+      //用户输入
+      let score =+prompt('请输入成绩')
+      //进行判断输出
+      if (score>700){
+        alert('恭喜考入黑马')
+      }
+      console.log('````````````````````````````')
+    </script>
+  </body>
+</html>

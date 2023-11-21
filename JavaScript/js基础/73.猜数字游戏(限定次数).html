@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    function getRandom(N, M) {
+      return Math.floor(Math.random() * (M - N + 1)) + N
+    }
+    let random = getRandom(1, 10)
+    // 限定三次
+    let flag = true //开关变量
+    for (let i = 1; i <= 3; i++) {
+      let num = +prompt('请输入你猜的数字')
+      // 3.if判断
+      if (num > random) {
+        alert('你猜大了')
+      }
+      else if (num < random) {
+        alert('你猜小了')
+      } else {
+        flag = false
+        alert('恭喜你猜对了')
+        break
+      }
+    }
+    // 写到for外面
+    if (flag) {
+      alert('你的次数用完了')
+    }
+  </script>
+</body>
+
+</html>

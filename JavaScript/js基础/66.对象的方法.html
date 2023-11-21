@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    let obj = {
+      name: '刘德华',
+      song: function (x, y) {
+        console.log('冰雨')
+        console.log(x + y)
+      }
+    }
+    // 方法调用   对象.方法名()
+    obj.song(1, 2)
+
+    // 方法名和函数两部分构成 之间使用:分隔
+    // 多个属性 , 隔开
+    // 方法是依附在对象中的函数
+    // 可以使用"" ''  一般省略
+    // 调用函数是一个道理  对象.方法名()  不要打印调用(undefined) 直接obj.song(1,2)
+  </script>
+</body>
+
+</html>

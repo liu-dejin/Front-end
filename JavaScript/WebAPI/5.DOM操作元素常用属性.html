@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <img src="./images/1.webp" alt="">
+  <script>
+    // //操作常用属性
+    // // 1.获取图片元素
+    // const img = document.querySelector('img')
+    // // 2.修改图片对象属性
+    // img.src = './images/2.webp'
+    // img.title = 'pink老师的艺术照'
+
+
+    function getRandom(N,M) {
+      return Math.floor(Math.random() * (M - N + 1)) + N
+    }
+
+    const img = document.querySelector('img')
+    const random = getRandom(1, 6)
+    img.src = `./images/${random}.webp`
+  </script>
+</body>
+
+</html>

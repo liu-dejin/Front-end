@@ -1,0 +1,35 @@
+<!-- 一元运算符  正负号
+自增：++   让变量+1
+自减：--   让变量-1 
+计数使用  
+相当于num+=1  执行一次每次只能+1-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>自增运算符</title>
+  </head>
+  <body>
+    <script>
+      //let num = 10
+      // num = num +1
+      // num +=1
+      //1.前置自增
+      let i = 1
+      ++i
+      console.log(i)
+      //2.后置自增
+      let q = 1
+      q++
+      console.log(q)
+    // 两种自增单独使用没有区别 更推荐i++
+    // 参与运算就有区别 
+    // 前置自增  ++在前，先加  i=1 ++i +1 结果是3
+    // 后置自增  ++在后，后加  i=1 i++ +1 结果是2
+    let p = 1
+    console.log(i++ + ++i +1);
+    </script>
+  </body>
+</html>

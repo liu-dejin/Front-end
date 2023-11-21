@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      width: 200px;
+      height: 200px;
+      background-color: pink;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box"></div>
+  <script>
+    // 1.通过style属性操作css
+    const box = document.querySelector('.box')
+    // 修改样式属性  对象.style.样式属性 = '值'   别忘了跟单位
+    box.style.width = '300px'
+
+    box.style.backgroundColor = 'hotpink' //多组单词小驼峰写法
+    box.style.border = '2px solid blue'
+    box.style.borderTop = '2px solid red'
+
+    //生成的是行内样式表,权重比较高
+    
+  </script>
+</body>
+
+</html>

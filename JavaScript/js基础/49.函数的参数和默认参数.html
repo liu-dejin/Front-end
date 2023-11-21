@@ -1,0 +1,80 @@
+<!-- function 函数名（参数列表）{
+  函数体
+} -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>函数的参数</title>
+</head>
+
+<body>
+  <script>
+    // function getSum(end) {   //end=50
+    //   // console.log(end)   50
+    //   let sum = 0
+    //   for (let i = 1; i <= end; i++) {
+    //     sum += i
+    //   }
+    //   console.log(sum)
+    // }
+    // getSum(50)  //1-50
+    // getSum(100) //1-100
+
+
+    function getSum(start, end) {
+      //形式上的参数
+      //形参理解为在函数内部声明的变量。赋值
+      //尽量保证实参和实参数量一致
+      let sum = 0
+      for (let i = start; i <= end; i++) {
+        sum += i
+      }
+      console.log(sum)
+    }
+    //调用的小括号里  实参-实际的参数
+    // getSum(50)  //1-50
+    // getSum(100) //1-100
+    getSum(1.100)
+    getSum(100, 101)
+
+    // //求和
+    // function getSum(num1, num2) {
+    //   // num1的默认值是undefined
+    //   document.write(num1 + num2)
+    // }
+    // getSum(1, 2)
+    // getSum()  //nan
+
+    //默认参数
+    // 形参不给值，看成变量不给值默认是undefined
+    // 用户不输入实参，undefined＋undefined = nan
+
+    // 该进一下，用户不输入，可以给一个形参默认值  可以默认为0
+    // function getSum(x = 0, y = 0) {
+    //   document.write(x + y)
+    // }
+    // getSum()
+    // getSum(1, 3)
+    // //这个默认值只会在缺少参数传递，才会被执行，所以参数优先执行传递过来的实参，否则默认undefined
+
+    //求和
+    // function getSum(start = 0, end = 0) {
+    //   //形式上的参数
+    //   //形参理解为在函数内部声明的变量。赋值
+    //   //尽量保证实参和实参数量一致
+    //   let sum = 0
+    //   for (let i = start; i <= end; i++) {
+    //     sum += i
+    //   }
+    //   console.log(sum)
+    // }
+    // getSum(1, 50)
+    // getSum(20, 222)
+  </script>
+</body>
+
+</html>

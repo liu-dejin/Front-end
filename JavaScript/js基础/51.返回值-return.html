@@ -1,0 +1,45 @@
+<!-- 把处理结果返回给调用者
+当调用某个函数，这个函数会返回一个结果出来  这就是有返回值 的函数
+根据需求选择是否用返回值 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>返回值return</title>
+</head>
+
+<body>
+  <script>
+    //函数的返回值
+    function fn() {
+      return 20
+    }
+    //相当于执行了fn（）=20
+    // console.log(fn())
+    // let num = prompt('请输入一个数字')
+    let re = fn()
+    console.log(re)
+
+
+
+    // function prompt(str) {
+    //   return str
+    // }
+    // let num1 = prompt('请输入')
+
+    function max(a, b) {
+      if (a > b) {
+        return a
+      }
+      return b
+    }
+    max(20, 10)
+    num11 = max
+    console.log(num11)
+  </script>
+</body>
+
+</html>
