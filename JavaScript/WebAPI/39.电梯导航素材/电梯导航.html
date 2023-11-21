@@ -1249,9 +1249,9 @@
         const list = document.querySelector('.xtx-elevator-list')
         list.addEventListener('click', function (e) {
             // console.log(11)
-            if (e.target.tagName === 'A') {
-                //     排他思想
-                //     移除原先的active
+            if (e.target.tagName === 'A' && e.target.dataset.name) {
+                // 排他思想
+                // 移除原先的active
                 // document.querySelector('.xtx-elevator-list .active').classList.remove('active')  //报错  原来没有这个类加以判断
                 // 获取这个类的对象
                 const old = document.querySelector('.xtx-elevator-list .active')
@@ -1262,13 +1262,37 @@
                 // 获得自定义属性  new  topic
                 // console.log(e.target.dataset.name)
                 // 根据小盒子自定义属性值找大盒子
-                document.querySelector(`.xtx_goods_${e.target.}`)
-
-
+                const top = document.querySelector(`.xtx_goods_${e.target.dataset.name}`).offsetTop
+                //让页面滚动到对应位置
+                document.documentElement.scrollTop = top
             }
         })
 
+        //页面滚动,根据大盒子给小盒子添加类
+       window.addEventListener('scroll',function (){
+           // 1.先移除类
+           const old = document.querySelector('.xtx-elevator-list .active')
+           // console.log(old)     null为false
+           if (old) old.classList.remove('active')
+           // 2.判读页面当前滑动的位置,选择小盒子
 
+           //获取四个大盒子
+           const news = document.querySelector('.xtx_goods_new')
+           const popular = document.querySelector('.xtx_goods_popular')
+           const brand = document.querySelector('.xtx_goods_brand')
+           const topic = document.querySelector('.xtx_goods_topic')
+           const n = document.documentElement.scrollTop
+           if (n >= news.offsetTop && n< popular.offsetTop){
+               //选择第一个小盒子
+               document.querySelector('[data-name=new]').classList.add('active')
+           }else if (n >= popular.offsetTop && n< brand.offsetTop){
+               document.querySelector('[data-name=popular]').classList.add('active')
+           }else if (n >= brand.offsetTop && n< topic.offsetTop){
+               document.querySelector('[data-name=brand]').classList.add('active')
+           }else if (n >= topic.offsetTop ){
+               document.querySelector('[data-name=topic]').classList.add('active')
+           }
+        })
     })();
 </script>
 </body>

@@ -1,4 +1,9 @@
 @charset "UTF-8";
+/*页面滚动*/
+html{
+  /*让滚动条丝滑滚动*/
+  scroll-behavior: smooth;
+}
 /** 分类及焦点图 **/
 .xtx_entry {
   height: 500px;
