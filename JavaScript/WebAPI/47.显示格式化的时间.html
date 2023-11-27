@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            width: 300px;
+            height: 40px;
+            border: 1px solid pink;
+            text-align: center;
+            line-height: 40px;
+        }
+    </style>
+</head>
+<body>
+<div></div>
+<script>
+    const div = document.querySelector('div')
+    const date = new Date()
+    // function getMyDate() {
+    //     const date = new Date()
+    //     let h = date.getHours()
+    //     let m = date.getMinutes()
+    //     let s = date.getSeconds()
+    //     h = h < 10 ? '0' + h : h
+    //     m = m < 10 ? '0' + m : m
+    //     s = s < 10 ? '0' + s : s
+    //     return `今天是:${date.getFullYear()}年${date.getMonth() + 1}月${date.getDate()}日${h}时:${m}分:${s}秒`
+    // }
+    // div.innerHTML = getMyDate()      //定时器一秒后执行,所以提前写一个
+    // setInterval(function () {
+    //     div.innerHTML = getMyDate()
+    // }, 1000)
+
+
+    // 快速方法toLocaleString
+    // div.innerHTML = date.toLocaleString()   //2023/11/21 21:06:38
+    setInterval(function () {
+        const date = new Date()
+        div.innerHTML = date.toLocaleString()
+    },1000)
+    // div.innerHTML = date.toLocaleDateString()   //2023/11/21
+    // div.innerHTML  = date.toLocaleTimeString()  //21:08:09
+</script>
+</body>
+</html>

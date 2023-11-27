@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+</ul>
+<script>
+    //克隆一个已有的节点
+    // 元素.cloneNode(布尔值)    若为true 克隆时会包含后代节点一起克隆   若为false则不包含后代节点
+    // 默认false
+    const ul = document.querySelector('ul')
+    const li1 = ul.children[0].cloneNode(true)  //深克隆
+    // console.log(li1)
+    //追加
+    ul.appendChild(li1)
+    ul.appendChild(ul.children[0].cloneNode())  //浅克隆只克隆标签
+</script>
+</body>
+</html>
