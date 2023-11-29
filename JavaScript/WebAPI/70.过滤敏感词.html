@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<textarea cols="30" rows="10"></textarea>
+<button>发布</button>
+<div></div>
+<script>
+    const tx = document.querySelector('textarea')
+    const btn = document.querySelector('button')
+    const div = document.querySelector('div')
+    btn.addEventListener('click', function () {
+        tx.value = tx.value.replace(/激情|基情/g, '***')
+        div.innerHTML =tx.value
+        tx.value = ''   // 清空输入框
+    })
+</script>
+</body>
+</html>
