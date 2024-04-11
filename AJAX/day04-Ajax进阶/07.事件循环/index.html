@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>事件循环</title>
+</head>
+
+<body>
+  
+  <script>
+    /**
+     * 目标：阅读并回答执行的顺序结果
+     * 13524
+     * 执行代码和收集异步任务  遇到异步代码交给宿主浏览器执行 宿主交给消息队列
+     * js先把同步代码执行完,在去消息队列里面找异步代码
+    */
+    console.log(1)
+    setTimeout(() => {
+      console.log(2)
+    }, 0)
+    console.log(3)
+    setTimeout(() => {
+      console.log(4)
+    }, 2000)
+    console.log(5)
+    
+  </script>
+</body>
+
+</html>

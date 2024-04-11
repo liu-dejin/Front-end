@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>同步代码和异步代码</title>
+</head>
+<body>
+  <button class="btn">点我</button>
+  <script>
+    //同步:逐行执行,原地等待结果后才继续向下执行
+    //异步:调用后 耗时,将来完成后出发回调函数
+    //定时器 事件  AJAX
+    // 目标：阅读并回答代码执行和打印的顺序   1,4,2 点击一次打印一次2
+    const result = 0 + 1
+    console.log(result)
+    setTimeout(() => {
+      console.log(2)
+    }, 2000)
+    document.querySelector('.btn').addEventListener('click', () => {
+      console.log(3)
+    })
+    document.body.style.backgroundColor = 'pink'
+    console.log(4)
+  </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    function Pig(name, age, gender) {
+      this.name = name
+      this.age = age
+      this.gender = gender
+    }
+
+    console.log(new Pig('佩奇',6,'男'))
+
+
+    const obj1 = new Pig('佩奇')
+    console.log(obj1)
+
+    //不需要return 返回的值就是创建的对象 实例化构造函数时,没有参数就可以省略()
+
+    function Goods(name,price,count) {
+      this.name = name
+      this.price =price
+      this.count=count
+    }
+    const mi = new Goods('小米',1999.20)
+  </script>
+</body>
+
+</html>
