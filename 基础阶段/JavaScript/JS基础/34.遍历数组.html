@@ -1,0 +1,38 @@
+<!-- for循环最大价值；循环数组 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>遍历数组</title>
+</head>
+
+<body>
+  <script>
+    //打印数组
+    let arr = ['刘德华', '刘德金', '马超', '关羽', '热巴']
+    // console.log(arr[0])
+    // console.log(arr[1])
+    // console.log(arr[2])
+    // console.log(arr[3])
+    // i <= 4   //长度-1，写活arr.length
+    // for (let i = 0; i <= arr.length - 1; i++) {
+    //   console.log(arr[i])
+    // }
+
+    //必须从0开始，数组索引号从0开始    arr.length
+    //遍历数组，从第一个循环到最后一个
+    for (let i = 0; i < arr.length; i++) { //带等号会加上一个undefined
+      console.log(arr[i])
+    }
+
+    let arr1 = []
+    console.log(arr1) //[]
+    console.log(arr[0]) //undefined
+    console.log(arr[1]) //undefined
+  </script>
+</body>
+
+</html>

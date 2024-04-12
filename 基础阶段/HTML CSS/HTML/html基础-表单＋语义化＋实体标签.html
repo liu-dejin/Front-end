@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单＋语义化＋实体标签</title>
+</head>
+
+<body>
+    <!-- 属性   xx="xxx" -->
+    <h1>三.表单标签</h1>
+    <!-- 使用场所比较局限 登录，注册，搜索 -->
+    <!-- 1、input系列标签 登录页面 注册页面
+    input可以通过type属性值的不同，效果不同 -->
+    <form action="">
+        文本框: <input type="text" placeholder="请输入用户名"> <!-- 单行文本 写什么显示什么  --> <!-- 可以加placeholder属性控件 占位符 提示用户输入内容的文本 -->
+        <br>
+        <br>
+        密码框: <input type="password" placeholder="请输入密码"> <!-- 密码，书写的内容以原点形式展示 -->
+        <!-- 可以加placeholder属性控件 占位符 提示用户输入内容的文本 -->
+        <br>
+        <br>
+        单选框：<input type="radio"> <!-- 多选一 --> <br>
+        性别<input type="radio" name="sex">男
+        <input type="radio" name="sex" checked>女
+        <input type="radio" name="sex">保密
+        <!-- 常用属性 name 分组有相同name属性值的单选框为一组 一组中只有一个被选中 --> <!-- checked 默认选中 -->
+        <br>
+        <br>
+        复选框： <input type="checkbox" checked> <!-- checked 默认选中 -->
+        <br>
+        <br>
+        文件选择：<input type="file" multiple> <!-- multiple多文件选择 -->
+        <br>
+        <br>
+        按钮:<input type="submit" value="免费注册"> <!-- 提交按钮，点击之后提交数据给后端服务器 -->
+        <input type="reset"> <!-- 重置按钮，点击后恢复表单默认值 -->
+        <input type="button" value="普通按钮"> <!-- 普通按钮 默认无功能，后期加js -->
+        <!-- value是按钮文字属性 -->
+    </form>
+    <br>
+    <!-- 想要实现以上按钮，需要配合form 表单域标签  使用 -->
+    <!-- 使用方法：用form标签把表单标签一起包裹起来 -->
+    <!-- 2.button按钮标签 -->
+    <!-- type也可以给button用，同input的按钮属性 -->
+    <button>我是按钮</button>
+    <button type="submit">提交按钮</button>
+    <button type="reset">重置按钮</button>
+    <button type="button">普通按钮，没什么功能</button>
+    <br>
+    <br>
+    <!-- 3.select下拉菜单标签 -->
+    <!-- select标签：下拉菜单的整体    option标签：下拉菜单的每一项    selected属性：下拉菜单的默认选中 父子关系 -->
+    <select>
+        <option>北京</option>
+        <option>上海</option>
+        <option>广州</option>
+        <option selected>深圳</option> <!-- selected默认选择 -->
+
+
+    </select>
+    <br>
+    <br>
+    <!-- 4.textarea文本域标签 -->
+    <!-- cols:规定了文本域的可见宽度    rows：规定了文本域的可见行数    多用scc设置 右下角可以拖拽 css禁用掉 -->
+    <textarea cols="20" rows="10"></textarea>
+    <br>
+    <!-- 5.label标签 -->
+    <!-- 绑定内容与表单标签的关系  -->
+    性别
+    <input type="radio" name="sex" id="nan"><label for="nan">男</label>
+    <!-- 1.使用label标签吧内容（如文本）包裹起来  在表单标签上添加id属性  在label标签的for属性中设置对应的id属性值（复杂） -->
+    <label><input type="radio" name="sex">女</label>
+    <!-- 2，直接使用label标签把内容（如：文本）和表单标签一起包裹起来    需要把label标签的for属性删除即可（简单）  -->
+</body>
+
+<body>
+    <h1>四.语义化标签</h1>
+    <!-- 1.没有语义的布局标签 div span 没有效果，后期css -->
+    普通文字
+    <!-- div标签  和普通文字没有区别 独占一行 -->
+    <div>这是div标签</div>
+    <div>这是div标签</div>
+    <!-- span标签  和普通文字没有区别 在一行显示 -->
+    <span>这是span标签</span>
+    <span>这是span标签</span>
+    <br>
+    <!-- 2.有语义的布局标签（了解） -->
+    <!-- 手机端网页制作 没有任何特殊效果 独占一行 -->
+    <header>网页头部</header>
+    <nav>网页导航</nav>
+    <footer>网页底部</footer>
+    <aside>网页侧边栏</aside>
+    <section>网页区块</section>
+    <article>网页文章</article>
+</body>
+
+<body>
+    <h1>五.字符实体</h1>
+    <!-- 1.html中空格合并现象 -->
+    <!-- 网页不认识多个空格，只认识一个空格 添加字符实体 -->
+    <!-- 2.常见的字符实体 -->
+    空格 &nbsp;
+    你真厉害&nbsp;&nbsp;&nbsp;&nbsp;棒棒棒
+</body>
+
+</html>

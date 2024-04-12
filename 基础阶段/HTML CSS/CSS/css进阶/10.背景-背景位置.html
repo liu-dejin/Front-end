@@ -1,0 +1,36 @@
+<!-- background-position(bgp)
+属性值 background-position: 水平方向位置 竖直方向位置;
+1.方位名词（最多只能表示九个位置）    水平方向 left center right    垂直方向 top center bottom
+2.数字+px(坐标)                   坐标系：原点(0.0)盒子左上角   x水平向右   y垂直向下                    操作：将图片左上角与坐标点重合即可
+
+    方位名词取值可以和坐标取值混合使用,第一个取值代表水平,第二个取值代表垂直 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景位置</title>
+    <style>
+        div{
+            width: 1000px;
+            height: 1000px;
+            background-color: pink;
+            background-image: url(../image/甘城web\ \(73\).jpg);
+            background-repeat: no-repeat;
+            /* background-position: 0 0; */
+            /* background-position: left 0; */
+            /* background-position: right bottom; */
+            /* background-position: center center; */
+            /* background-position: center; */
+            /* background-position: 50px 100px; */
+            background-position: -50px -100px;    /* 如果是负数向左向上移动*/
+            /* 背景色和背景图只显示在盒子里面    外边不显示图  */
+       
+        }
+    </style>
+</head>
+<body>
+    <div>文字</div>    
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*input[value]{*/
+        /*    color: red;*/
+        /*}*/
+
+        input[type=text]{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<input type="text" name="" value="123" data-id="0" data-name="andy">
+<input type="password" name="" >
+<script>
+    const input = document.querySelector('input[value]')
+    console.log(input.dataset)  //自定义属性集合
+    console.log(input.dataset.name)
+</script>
+</body>
+</html>

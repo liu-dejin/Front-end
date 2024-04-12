@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 1.开启定时器
+    // setInterval(函数,间隔时间) 1s=1000ms
+    // setInterval(function () {
+    //   console.log('1s执行一次')
+    // }, 1000)
+
+    function fn() {
+      console.log('1s执行一次')
+    }
+    // setInterval(函数名,间隔时间) 函数名不要加小括号 
+    let n = setInterval(fn, 1000)
+    // setInterval('fn()',100) //不常见不推荐
+
+    //返回的是一个id数字
+    console.log(n)
+
+    // setInterval(function () {
+    //   // console.log('每0.1秒执行一次')
+    // }, 100)
+    // console.log(m)
+
+    //2.关闭定时器
+    clearInterval(n)
+  </script>
+</body>
+
+</html>

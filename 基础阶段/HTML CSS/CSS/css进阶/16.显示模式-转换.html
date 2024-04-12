@@ -1,0 +1,43 @@
+<!-- 改变元素默认的显示特点，更加符合布局要求
+语法 
+    display：block  转化为块元素   较多
+    display：inline-block   转化为行内块元素   较多
+    display：inline      转化为行内元素     较少 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>*转换</title>
+    <style>
+        div{
+            width: 300px;
+            height: 300px;
+            background-color: pink;
+            /* 转化为行内块 */
+            /* display: inline-block; */
+
+            /* 转化为行内 */
+            /* display:inline     */
+        }   
+        span{
+            width: 300px;
+            height: 300px;
+            background-color: pink;
+            /* 转化为行内块 */
+            /* display: inline-block; */
+
+            /* 转化为块 */
+            /* display: block; */
+        }
+    </style>
+</head>
+<body>
+    <div>div</div>
+    <div>div</div>
+
+    <span>span</span>
+    <span>span</span>
+</body>
+</html>

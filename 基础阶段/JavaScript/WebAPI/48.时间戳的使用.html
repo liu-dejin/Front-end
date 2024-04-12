@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // 1.getTime()方法    必须实例化
+    const date = new Date()
+    console.log(date.getTime())
+    //2. +newDate()    无需实例化
+    console.log(+new Date())
+    //3.Date.new()    无需实例化 只能得到当前的时间戳 前两种可以返回指定时间的时间戳
+    console.log(Date.now())
+
+    console.log(+new Date())
+    console.log('--------------------------')
+    console.log(+new Date('2022-11-21 18:30:00'))
+
+    //我要根据日期 Day()  0-6 返回的是星期几
+    const arr = ['星期天','星期一','星期二','星期三','星期四','星期五','星期六',]
+    console.log(arr[new Date().getDay()])
+
+</script>
+</body>
+</html>

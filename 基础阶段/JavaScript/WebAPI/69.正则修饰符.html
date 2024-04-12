@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //修饰符   /表达式/修饰符    约束细节
+    //i 忽略大小写
+    console.log(/^java$/.test('java'))
+    console.log(/^java$/i.test('Java')) //不管大小写都为true
+    //g 全局匹配
+    str = '我们在学习java,java很牛逼'
+    console.log(/java/g.test(str))
+
+
+    //替换 replace()方法
+    str = '我们在学习java,java很牛逼'
+    const re = str.replace(/java/ig,'javascript')
+    console.log(re)
+
+</script>
+</body>
+</html>

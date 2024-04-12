@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        //用于匹配字符串字符组合的一种模式
+        //匹配    替换      提取
+        //定义规则  查找
+        // const 变量名 = /正则表达式/
+        const str = '我们在学习前端'
+        //1.定义规则
+        const reg = /前端/
+
+        //2.查找是否匹配  text()方法    返回布尔值
+        // if(reg.test(str)){
+        //     console.log('匹配成功')
+        // }else{
+        //     console.log('匹配失败')
+        // }
+        //查找符合规则的字符串    exec()方法    返回数组
+        console.log(reg.exec(str))
+
+    </script>
+</body>
+</html>

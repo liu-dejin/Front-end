@@ -1,0 +1,25 @@
+<!-- 用户输入一个数，如果数字小于10则在前面补0，比如09,08    1.为后期页面显示做铺垫  2.利用三元运算符 补0计算 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>数字补0</title>
+  </head>
+  <body>
+    <script>
+      let age = 18
+      age = age + 1
+      age++
+      //用户输入
+      let num = prompt('请你输入一个数字')
+      //判断输出  <10的才补0
+      num = num < 10 ? 0 + num : num //用户输入
+      //   let num1 = +prompt('请你输入一个数字')
+      //   //判断输出  <10的才补0
+      //   num = num < 10 ? '0' + num : num   //方法2
+      alert(num)
+    </script>
+  </body>
+</html>

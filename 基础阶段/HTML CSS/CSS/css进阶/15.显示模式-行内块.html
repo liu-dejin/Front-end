@@ -1,0 +1,33 @@
+<!-- 一行显示多个       可以设置宽高
+input    textarea  button  select..........
+特殊：img标签有行内块的元素特点，但Chrome调试工具显示结果是inline -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>行内块</title>
+    <style>
+        /* 行内块元素设置宽高后可能会导致元素的总宽度超过了其父元素的宽度，从而导致元素换行显示。
+        这种现象通常称为“盒子模型”，也就是元素包含内容区、内边距区、边框区、外边距区等多个部分，这些部分的宽度和高度都可以影响元素的总宽度和高度。
+        如果要让行内块元素在一行内显示，请确保其总宽度不超过父元素的宽度，可以考虑调整内边距、边框、外边距等属性，或者使用浮动、定位等技术实现。 */
+        * {
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="../images/甘城(1).jpg" alt="二次元">
+    <img src="../images/甘城(1).png" alt="二次元">
+    <input type="text">
+    <input type="text">
+    <textarea cols="30" rows="10"></textarea>
+    <textarea cols="30" rows="10"></textarea>
+
+</body>
+
+</html>

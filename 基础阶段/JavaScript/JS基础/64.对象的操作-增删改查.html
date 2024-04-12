@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>增删改查</title>
+</head>
+
+<body>
+  <script>
+    //声明
+    let pink = {
+      uname: 'pink',
+      age: 18,
+      gender: '男'
+    }
+    console.log(pink)
+
+    //使用属性 查 对象名.属性名
+    console.log(pink.age)
+
+    //改 对象名.属性名=新值
+    pink.age = 11
+    console.log(pink)
+
+    //增 对象名.新属性=新值
+    pink.hobby = '足球'
+    console.log(pink)
+
+    //删（了解）  delete 对象名.属性名
+    delete pink.hobby
+    console.log(pink)
+  </script>
+</body>
+
+</html>

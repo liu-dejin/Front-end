@@ -1,0 +1,56 @@
+<!-- 布尔型(boolean)   true(真)  false(假) 布尔型字面量 -->
+<!-- undefined  比较特殊的类型  只有一个值undefined
+只声明不赋值的情况  变量默认值为undefined 一般很少[直接]为某个变量赋值为undefined -->
+<!-- null(空类型)  仅仅是一个表示‘无’‘空’或‘值未知’的特殊值
+与undefined区别 undefined表示没有赋值  null表示赋值了，但内容为空
+null开发场景  官方：null作为尚未创建的对象     大白话：将来有个变量里面存放了是一个对象  但是对象还没有创建好，可以先给一个null-->
+<!-- 检测数据类型
+控制台语句经常用于测试结果来使用
+可以看出数学型和布尔型颜色为蓝色，字符串和undefined
+通过typeof关键字检测数据类型 
+1.作为运算符: typeof x (常用的写法)
+2.函数形式: typeof(x)
+换言之有括号和没有括号，得到的结果是一样的  所以我们直接使用运算符的写法-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>其他类型和类型检测</title>
+  </head>
+
+  <body>
+    <script>
+      console.log(3 > 4) //false
+      let isCool = true
+      console.log(isCool)
+
+      // let num  //为赋值打印undefined
+      // console.log(num)
+      //工作中经常声明一个变量，等待传送过来的数据、我们不知道数据是否传送过来了，就打印一下检测是不是undefined，用于判断
+
+      let obj1 = null
+      console.log(obj1)
+      //计算区别
+      console.log(undefined + 1) //NaN
+      console.log(null + 1) //1
+
+      // typeof 检测数据类型
+      console.log('检测数据类型')
+      let num = 10
+      console.log(typeof num)
+      let str = 'pink'
+      console.log(typeof str)
+      let str1 = '10'
+      console.log(typeof str1)
+      let flog = false
+      console.log(typeof flog)
+      let un
+      console.log(typeof un)
+      let obj = null
+      console.log(typeof obj)
+    </script>
+  </body>
+</html>

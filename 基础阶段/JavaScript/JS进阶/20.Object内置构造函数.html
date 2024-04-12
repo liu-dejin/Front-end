@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //静态方法,只有Object可以调用
+
+    const o ={
+        uname :'pink',
+        age:18
+    }
+    //获取全部属性名
+    console.log(Object.keys(o)) //返回数组['uname','age']
+    //获取全部属性值
+    console.log(Object.values(o)) //['pink', 18]
+
+    //对象拷贝
+    const oo = {}
+    Object.assign(oo,o)
+    console.log(oo)
+
+    //追加
+    Object.assign(o,{gender:'男'})
+    console.log(o)
+</script>
+</body>
+</html>

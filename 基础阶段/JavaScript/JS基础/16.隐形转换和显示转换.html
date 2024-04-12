@@ -1,0 +1,72 @@
+<!-- js是弱数据类型，js也不知道变量到底属于那种数据类型，只有赋值了才清楚。
+坑:使用表单、prompt获取过来的数据默认是字符串类型，此时不能直接的进行加法运算          
+console.log('1000'+'2000')  //10002000 -->
+<!-- 此时需要转换变量的数据类型
+通俗来说，就是把一种数据类型的变量转换成我们需要的数据类型 -->
+
+<!-- 隐式转换
+规则:+号两边只要有一个字符串，都会吧另一个转换成字符串
+除了+外的算术运算符  比如- * /都会把数据转成数字类型  
+缺点：转换类型不明确，考经验才能总结 
+小技巧: +作为正号解析可以转换成数字型
+任何数据和字符串想加的结果都是字符串-->
+
+<!-- 显示转换
+隐式转换不严谨 规则不清晰  大多是经验总结 
+为了避免 因隐式装换带来的问题，通常跟逻辑需要对数据进行显式转换
+自己写代码告诉系统该转成什么类型
+转换失败显示NaN 即不是一个数字
+NaN也属于number类型的数据，代表非数字
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>类型转换</title>
+    <style>
+      .box {
+        width: 300px;
+        height: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      console.log(1 + 1)
+      console.log('kis' + 1) //kis1  隐式转换 数字型转换为字符型
+      console.log(2 + 2)
+      console.log(2 + '2') //22
+      console.log(2 - 2)
+      console.log(2 - '2') //0   字符串转化数字型
+      console.log(+12)
+      console.log(+'123') //转化为数字型
+
+      //显式转换
+      let str = '123'
+      console.log(Number(str))
+      console.log(Number('pink')) //NaN  一般字符型装换为number
+      let num = prompt('输入年薪')
+      console.log(Number(num)) //第一种转换方式
+      let num1 = +prompt('输入年薪')
+      console.log(Number(num1)) //第二种转换方式  推荐
+      // parseInt   只保留整数
+      console.log(parseInt('12px'))
+      console.log(parseInt('12.i99px'))
+      console.log(parseInt('12.11111px'))
+      console.log(parseInt('abc11.22px')) //NaN
+      //parseFloat   可以保留小数
+      console.log(parseFloat('12px')) //12
+      console.log(parseFloat('12.199px')) //12.199
+      console.log(parseFloat('12.11111px')) //12.11111
+      console.log(parseFloat('abc11.22px')) //NaN
+
+      //1.用户输入  //prompt 得到的字符串型  转化为数字型
+      let num2 = +prompt('请输入第一个数；')
+      let num3 = +prompt('请输入第二个数；') //vscode鼠标悬停变量会显示类型
+      //2.输出
+      alert(`两个数的和为:${num2 + num3}`)
+    </script>
+  </body>
+</html>

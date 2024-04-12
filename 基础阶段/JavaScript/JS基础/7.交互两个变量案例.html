@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>交互两个变量案例</title>
+  </head>
+
+  <body>
+    <img src="images/Snipaste_2023-03-07_20-18-02.png" alt="伪代码" />
+    写伪代码，先写注释，在翻译
+    <script>
+      //临时变量 用来做中间存储
+      let num1 = 10
+      let num2 = 20
+      let temp
+      // 都是把右边给左边
+      temp = num1
+      num1 = num2
+      num2 = temp
+      console.log(num1, num2)
+    </script>
+  </body>
+</html>

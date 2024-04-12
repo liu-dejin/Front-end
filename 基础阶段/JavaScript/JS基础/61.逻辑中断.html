@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 默认参数  防止不传参x=0,y=0
+    function fn(x, y) {
+      // undefined当假看  输出后面一个真值
+      x = x || 0
+      y = y || 0
+      console.log(x + y)
+    }
+    fn()
+
+    // 类似于默认参数的写法
+
+    // 逻辑运算符的短路
+    // 逻辑与
+    // console.log(false && 22)
+    // console.log(false && 3+5)
+    let age = 10
+    console.log(false && age++) //输出位false age++不再执行
+    console.log(true && 11) //操作符两边的表达式都是真值时，才会返回最后一个表达式的结果
+    // 一假则假 前面是假的  后面就不再执行
+
+    // 逻辑或
+    console.log(true || age++) //输出为true age++不再执行
+    console.log(false || 22)  //22
+    // 一真则真 前面赋值  后面不计算
+
+    console.log(11 && 22) //都为真输出最后一个真值
+    console.log(11 || 22) //输出第一个真值
+
+
+  </script>
+</body>
+
+</html>

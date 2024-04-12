@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <button>点击</button>
+  <script>
+
+    // this指向
+    // function fn() {
+    //   console.log(this)
+    // }
+    // window.fn()
+
+    // 当前函数所处的环境
+    const btn = document.querySelector('button')
+    btn.addEventListener('click', function () {
+      // console.log(this) //<button>点击</button>
+      this.style.color = 'red'
+    })
+    // 谁调用this就指向谁   粗略规则
+
+
+    //回调函数
+    // 函数a作为参数传送给函数b  称a为回调函数
+    function fn() {
+      console.log("我是回调函数")
+    }
+
+    setInterval(fn, 1000)
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!-- 标点符号一定要英文，光标挨着的是英文 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>谷歌-排错</title>
+  <style>
+    /* .father .son .sun {
+      color: blue;
+    } */
+
+    /* .father .son .sun {
+      color: red;
+    } */
+
+ /* 上一行出错, 下一行会受影响 */
+    /* } */
+    /* .father .son .sun {
+      color: orange;
+    } */
+
+    /* .father .son .sun {
+      color: red;
+      font-size: 20px;
+    } */
+
+    /* .father .son .sun {
+      color:red;
+      font-size: 20px;
+    } */
+
+    .father .son .sun {
+      color:red;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+    <div class="father">
+      <div class="son">
+        <div class="sun">孙子</div>
+      </div>
+    </div>
+</body>
+</html>
