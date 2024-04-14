@@ -7,7 +7,7 @@
 // 1.1 判断无 token 令牌字符串，则强制跳转到登录页
 const token = localStorage.getItem('token')
 if (!token) {
-  location.href = '../login/index.html'
+    location.href = '../login/index.html'
 }
 
 /**
@@ -17,10 +17,10 @@ if (!token) {
  */
 // 2.2 请求个人信息并设置到页面
 axios({
-  url: '/v1_0/user/profile'
+    url: '/v1_0/user/profile'
 }).then(result => {
-  const username = result.data.name
-  document.querySelector('.nick-name').innerHTML = username
+    const username = result.data.name
+    document.querySelector('.nick-name').innerHTML = username
 })
 
 /**
@@ -29,4 +29,9 @@ axios({
  *  3.2 清空本地缓存，跳转到登录页面
  */
 // 3.1 绑定点击事件
+document.querySelector('.quit').addEventListener('click', e => {
+    // 3.2 清空本地缓存，跳转到登录页面
+    localStorage.clear()
+    location.href = '../login/index.html'
+})
 
