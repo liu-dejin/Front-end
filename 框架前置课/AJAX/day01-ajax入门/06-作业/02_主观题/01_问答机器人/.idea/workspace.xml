@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="47c57cf6-6569-4f84-8e44-b0666de6d2c6" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../../day03-Ajax原理/01.XMLHttpRequest_基础使用/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../day03-Ajax原理/02.XMLHttpRequest_查询参数/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../day03-Ajax原理/03.案例_地区查询/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../day03-Ajax原理/04.XMLHttpRequest_数据提交/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../day03-Ajax原理/05.认识_Promise/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../day03-Ajax原理/06.认识_Promise状态/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../day03-Ajax原理/07.案例_使用Promise+XHR_获取省份列表/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../day03-Ajax原理/08.封装_简易axios函数_获取省份列表/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../day03-Ajax原理/09.封装_简易axios函数_获取地区列表/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../day03-Ajax原理/10.封装_简易axios函数_注册账号/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../day03-Ajax原理/11-14.案例_天气预报/css/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../day03-Ajax原理/11-14.案例_天气预报/css/reset.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../day03-Ajax原理/11-14.案例_天气预报/imgs/冰雹-line.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../day03-Ajax原理/11-14.案例_天气预报/imgs/冰雹.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../day03-Ajax原理/11-14.案例_天气预报/imgs/多云.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../day03-Ajax原理/11-14.案例_天气预报/imgs/夜晚-line.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../day03-Ajax原理/11-14.案例_天气预报/imgs/夜晚.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../day03-Ajax原理/11-14.案例_天气预报/imgs/夜间多云-line.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../day03-Ajax原理/11-14.案例_天气预报/imgs/大雨-line.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../day03-Ajax原理/11-14.案例_天气预报/imgs/大雨.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../day03-Ajax原理/11-14.案例_天气预报/imgs/大雪-line.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../day03-Ajax原理/11-14.案例_天气预报/imgs/大雪.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../day03-Ajax原理/11-14.案例_天气预报/imgs/大雾.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../day03-Ajax原理/11-14.案例_天气预报/imgs/大风-line.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../day03-Ajax原理/11-14.案例_天气预报/imgs/大风.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../day03-Ajax原理/11-14.案例_天气预报/imgs/定位.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../day03-Ajax原理/11-14.案例_天气预报/imgs/小雨-line.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../day03-Ajax原理/11-14.案例_天气预报/imgs/小雨.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../day03-Ajax原理/11-14.案例_天气预报/imgs/小雪-line.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../day03-Ajax原理/11-14.案例_天气预报/imgs/小雪.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../day03-Ajax原理/11-14.案例_天气预报/imgs/尘土-line.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../day03-Ajax原理/11-14.案例_天气预报/imgs/尘土.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../day03-Ajax原理/11-14.案例_天气预报/imgs/晴天-line.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../day03-Ajax原理/11-14.案例_天气预报/imgs/晴天.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../day03-Ajax原理/11-14.案例_天气预报/imgs/有云.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../day03-Ajax原理/11-14.案例_天气预报/imgs/有雾-line.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../day03-Ajax原理/11-14.案例_天气预报/imgs/阴天-line.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../day03-Ajax原理/11-14.案例_天气预报/imgs/阴天.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../day03-Ajax原理/11-14.案例_天气预报/imgs/雨夹雪-line.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../day03-Ajax原理/11-14.案例_天气预报/imgs/雨雪.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../day03-Ajax原理/11-14.案例_天气预报/imgs/雷雨-line.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../day03-Ajax原理/11-14.案例_天气预报/imgs/雷雨.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../day03-Ajax原理/11-14.案例_天气预报/imgs/雾霾-line.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../day03-Ajax原理/11-14.案例_天气预报/imgs/霾.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../day03-Ajax原理/11-14.案例_天气预报/imgs/风暴-line.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../day03-Ajax原理/11-14.案例_天气预报/imgs/风暴.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../day03-Ajax原理/11-14.案例_天气预报/imgs/风沙-line.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../day03-Ajax原理/11-14.案例_天气预报/imgs/风沙.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../day03-Ajax原理/11-14.案例_天气预报/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../day03-Ajax原理/11-14.案例_天气预报/js/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../day03-Ajax原理/11-14.案例_天气预报/js/my-axios.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../day03-Ajax原理/11-14.案例_天气预报/js/search.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2ekZ6jdwbvzsy0UmxCLK9p9JHaU" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.10-corretto-17.0.10-f644763e9732-24fca987" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="47c57cf6-6569-4f84-8e44-b0666de6d2c6" name="更改" comment="" />
+      <created>1712450364303</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1712450364303</updated>
+      <workItem from="1712450366940" duration="1042000" />
+      <workItem from="1712451433288" duration="58000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
