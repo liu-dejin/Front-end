@@ -8,6 +8,9 @@ const path = require('path')
 const express = require('express')
 const server = express()
 
+//托管静态页面
+server.use(express.static('./public'))
+
 server.get('/api/province', (req, res) => {
   fs.readFile(path.join(__dirname, 'data/province.json'), (err, data) => {
     res.send(data.toString())

@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="77db055d-e555-424c-b414-d8d7753ecb6e" name="更改" comment="" />
+    <list default="true" id="77db055d-e555-424c-b414-d8d7753ecb6e" name="更改" comment="feat: nodeJs入门">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -107,11 +109,25 @@
       <workItem from="1713103354921" duration="210000" />
       <workItem from="1713104064598" duration="103000" />
       <workItem from="1713139875659" duration="4052000" />
-      <workItem from="1713181271998" duration="8182000" />
+      <workItem from="1713181271998" duration="9718000" />
+      <workItem from="1713244756619" duration="482000" />
     </task>
+    <task id="LOCAL-00001" summary="feat: nodeJs入门">
+      <option name="closed" value="true" />
+      <created>1713189929965</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1713189929965</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: nodeJs入门" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: nodeJs入门" />
   </component>
 </project>

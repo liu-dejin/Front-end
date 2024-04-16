@@ -7,8 +7,15 @@ const path = require('path')
 const express = require('express')
 const server = express()
 
+// 用户请求/api/province返回数据
+server.get('/api/province',(req, res)=>{
+  fs.readFile(path.join(__dirname,'data/province.json'),(err,data)=>{
+    if (err) console.log(err)
+    else res.send(data.toString())
+  })
+})
 
-
+//*表示所有路径
 server.all('*', (req, res) => {
   res.status(404)
   res.send('你要访问的资源路径不存在')

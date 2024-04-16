@@ -10,6 +10,14 @@
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script>
     // 目标：请求本机 Web 服务提供的省份列表数据
+    //当前网页运行端口和请求地址端口不一致  引发跨域现象
+    axios({
+      url:'http://127.0.0.1:3000/api/province'
+    }).then(res=>{
+      console.log(res)
+    }).catch(err=>{
+      console.log(err)
+    })
   </script>
 </body>
 </html>

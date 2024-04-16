@@ -11,17 +11,20 @@ const path = require('path')
 const express = require('express')
 const server = express()
 
+const cors = require('cors')
+server.use(cors())
+
 server.get('/api/province', (req, res) => {
-  fs.readFile(path.join(__dirname, 'data/province.json'), (err, data) => {
-    res.send(data.toString())
-  })
+    fs.readFile(path.join(__dirname, 'data/province.json'), (err, data) => {
+        res.send(data.toString())
+    })
 })
 
 server.all('*', (req, res) => {
-  res.status(404)
-  res.send('你要访问的资源路径不存在')
+    res.status(404)
+    res.send('你要访问的资源路径不存在')
 })
 
 server.listen(3000, () => {
-  console.log('Web 服务已启动')
+    console.log('Web 服务已启动')
 })
