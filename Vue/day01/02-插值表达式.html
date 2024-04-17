@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="app">
+    <p>{{nikename}}</p>
+    <p>{{nikename.toUpperCase()}}</p>
+    <p>{{nikename+'你好'}}</p>
+
+    <p>{{age>=18?'成年':'未成年'}}</p>
+    <p>{{friend.name}}</p>
+
+    <!-- <p>{{hobby}}</p> //不存在 -->
+    <!-- <p>{{if}}</p> //不准写语句 -->
+    <!-- <p title="{{nikename}}">我是p</p> 不准写在属性里 -->
+  </div>
+
+  <script src="./vue.js"></script>
+  <script>
+
+    const app = new Vue({
+      el: '#app',
+      data: {
+        nikename: 'tiny',
+        age: 19,
+        friend: {
+          name: 'yyx',
+          docs: '喜欢vue'
+        }
+      }
+    })
+  </script>
+
+</body>
+
+</html>

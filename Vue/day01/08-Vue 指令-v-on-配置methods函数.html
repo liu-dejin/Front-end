@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="app">
+    <!-- ""里面写method的函数名 -->
+    <button @click="fn">切换显示隐藏</button>
+    <h1 v-show="isShow">黑马程序员</h1>
+  </div>
+  <script src="./vue.js"></script>
+  <script>
+    const app = new Vue({
+      el: '#app',
+      data: {
+        isShow: true
+      },
+      methods: {
+        //提供处理逻辑函数
+        fn() {
+          // console.log('执行了fn', this.isShow)
+          //methods中的函数,this都指向当前实例
+          this.isShow = !this.isShow
+        }
+      }
+    })
+  </script>
+</body>
+
+</html>
