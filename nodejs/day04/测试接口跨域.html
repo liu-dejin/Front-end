@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button id="btnGet">get请求</button>
+  <button id="btnPost">post请求</button>
+  <button id="btnDel">del请求</button>
+  <button id="btnJsonp">json</button>
+  <script src="https://cdn.staticfile.net/jquery/3.7.1/jquery.js"></script>
+  <script src="https://cdn.staticfile.net/axios/1.6.5/axios.js"></script>
+ <script>
+  //测试get
+  $('#btnGet').on('click',()=>{
+    $.ajax({
+      type:'GET',
+      url:'http://127.0.0.1/api/get',
+      data:{
+        name:'zs',
+        age:20
+      },
+      success:res=>{
+        console.log(res)
+      }
+    })
+  })
+
+  //测试post
+  $('#btnPost').on('click',()=>{
+    $.ajax({
+      type:'POST',
+      url:'http://127.0.0.1/api/post',
+      data:{
+        bookname:'水浒传',
+        author:'施耐庵'
+      },
+      success:res=>{
+        console.log(res)
+      }
+    })
+  })
+  document.querySelector('#btnDel').addEventListener('click',()=>{
+    axios.delete('http://127.0.0.1/api/delete').then(res=>{
+      console.log(res)
+    })
+  })
+
+  document.querySelector('#btnJsonp').addEventListener('click',fetch('http://127.0.0.1/api/jsonp').then(res=>{console.log(res)}))
+ </script>
+</body>
+</html>
