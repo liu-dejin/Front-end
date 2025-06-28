@@ -1,0 +1,20 @@
+/* 
+.父选择器{
+// 父级样式
+  .子选择器{
+    // 子级样式
+  }
+}
+*/
+.father {
+  width: 200px;
+}
+.father .son {
+  color: red;
+}
+.father .son a {
+  color: green;
+}
+.father .son a:hover {
+  color: blue;
+}

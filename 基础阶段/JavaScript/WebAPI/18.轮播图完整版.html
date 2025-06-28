@@ -127,67 +127,28 @@
       { url: './images/slider08.jpg', title: '谁不想和小猫咪贴贴呢！', color: 'rgb(99, 72, 114)' },
     ]
 
-    // 获取元素
+    //获取元素
     const img = document.querySelector('.slider-wrapper img')
     const p = document.querySelector('.slider-footer p')
     const footer = document.querySelector('.slider-footer')
-
-    // 右侧案例模块
+    // 1.右侧按钮
+    //1.1获取右侧按钮
     const next = document.querySelector('.next')
-    let i = 0
-
+    let i = 0 //信号量  控制播放的图片张数
+    // 1.2绑定点击事件
     next.addEventListener('click', function () {
-      // console.log(1)
+      // console.log(11)
       i++
-      if (i >= 8) {
-        i = 0
-      }
+      //得到对应的对象
       // console.log(sliderData[i])
-      toggle()
-    })
-
-    // 左侧案例模块
-    const prev = document.querySelector('.prev')
-    prev.addEventListener('click', function () {
-      // console.log(1)
-      i--
-      if (i < 0) {
-        i = 7 //data-length-1
-      }
-      // console.log(sliderData[i])
-      toggle()
-    })
-
-
-    // 声明渲染函数
-    function toggle() {
+      //渲染数据
       img.src = sliderData[i].url
       p.innerHTML = sliderData[i].title
       footer.style.backgroundColor = sliderData[i].color
-      //更换小圆点  移除原来的类  添加当前类
+      //1.5更换小圆点 移出原有
 
-      document.querySelector('.slider-indicator .active').classList.remove('active')
-      document.querySelector(`.slider-indicator li:nth-child(${i + 1})`).classList.add('active')
-    }
-
-    // 自动播放模块
-    let timerId = setInterval(function () {
-      // 利用js自动调用点击   click()必须加小括号
-      next.click()
-    }, 1000)
-
-    const slider = document.querySelector('.slider')
-    slider.addEventListener('mouseenter', function () {
-      clearInterval(timerId)
     })
 
-    slider.addEventListener('mouseleave', function () {
-      clearInterval(timerId)
-      timerId = setInterval(function () {
-        // 利用js自动调用点击   click()必须加小括号
-        next.click()
-      }, 1000)
-    })
   </script>
 </body>
 

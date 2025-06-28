@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>111</div>
+    <script>
+      function fn() {
+        try {
+          //可能错误的代码
+          const p = document.querySelector('.p')
+          p.style.color = 'pink'
+        } catch (err) {
+          // 拦截浏览器的错误信息,不中断
+          console.log(err.message)
+          // 加return中断
+          // return
+          throw new Error('你看看选择器错误了')
+        } finally {
+          //一定会执行的代码
+          alert('对话框')
+        }
+      }
+      fn()
+    </script>
+  </body>
+</html>

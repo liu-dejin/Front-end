@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>精灵动画</title>
+    <style>
+      div {
+        height: 140px;
+        width: 140px;
+        border: 1px solid #000;
+        background-image: url(./images/bg.png);
+        /* steps个数和精灵小图个数相同 */
+        animation: run 1s steps(12) infinite;
+      }
+      @keyframes run {
+        from {
+          background-position: 0 0;
+        }
+        to {
+          background-position: -1680px 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>

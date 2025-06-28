@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 公共属性写在构造函数里面
+      function Star(uname, age) {
+        this.uname = uname
+        this.age = age
+        // this.sing = function () {
+        //   console.log('唱歌')
+        // }
+      }
+      // 公共的方法写在原型对象上
+      Star.prototype.sing = function () {
+        console.log('唱歌')
+      }
+      const ldh = new Star('ldj', 55)
+      const zxy = new Star('zxy', 55)
+
+      ldh.sing()
+      zxy.sing()
+      console.log(ldh.sing() === zxy.sing()) //true
+
+      // console.dir(Star.prototype)
+    </script>
+  </body>
+</html>

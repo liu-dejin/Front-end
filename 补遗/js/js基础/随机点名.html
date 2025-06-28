@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let arr = ['关羽', '张飞', '赵云', '马超', '黄忠', '曹操', '刘备']
+      let random = Math.floor(Math.random() * arr.length)
+      document.write(arr[random])
+
+      //splice(起始位置（下标），删除几个元素)
+      arr.splice(random, 1)
+    </script>
+  </body>
+</html>

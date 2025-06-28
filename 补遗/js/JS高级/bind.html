@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button>发送</button>
+    <script>
+      //不会调用函数 改变this
+      // const obj = {
+      //   age: 18
+      // }
+      // function fn() {
+      //   console.log(this)
+      // }
+      // const fun = fn.bind(obj)
+      // console.log(fun)
+      document.querySelector('button').addEventListener('click', function () {
+        console.log(this)
+        // 禁用按钮
+        this.disabled = true
+        setTimeout(
+          function () {
+            // window 改btn
+            this.disabled = false
+          }.bind(this),
+          2000
+        )
+      })
+    </script>
+  </body>
+</html>

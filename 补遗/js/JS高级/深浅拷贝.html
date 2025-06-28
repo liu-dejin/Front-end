@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 直接赋值 会直接修改原对象
+      // const obj = {
+      //   uname: 'ldj',
+      //   age: 18
+      // }
+      // const oo = obj
+      // oo.uname = 'ldj1'
+      // console.log(oo)
+      // console.log(obj)
+
+      // 浅拷贝 不会修改原对象  果是一层对象，不相互影响    {{}}会拷贝地址 修改会影响原对象
+      const obj = {
+        uname: 'ldj',
+        age: 18,
+        family: {
+          baby: '小小'
+        }
+      }
+      // const oo = { ...obj }
+      // console.log(oo)
+      // oo.age = 20
+      // console.log(oo)
+      // console.log(obj)
+
+      const oo = {}
+      Object.assign(oo, obj)
+      oo.age = 22
+      console.log(oo)
+      console.log(obj)
+    </script>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 利用递归函数深拷贝
+      /*
+      1.函数递归
+      2.普通的数据直接拷贝
+      3.数组,对象再次递归    3*先数组再对象
+      */
+      const obj = {
+        uname: 'pink',
+        age: 18,
+        hobby: ['乒乓球', '足球'],
+        family: {
+          baby: '小pink'
+        }
+      }
+
+      const o = {}
+
+      // 拷贝数组
+      function deepCopy(newObj, oldObj) {
+        for (let k in oldObj) {
+          // 先arr后对象
+          //处理数组
+          debugger
+          if (oldObj[k] instanceof Array) {
+            newObj[k] = []
+            deepCopy(newObj[k], oldObj[k])
+          } //数组也instanceof Object 所以先把数组筛选走
+          else if (oldObj[k] instanceof Object) {
+            newObj[k] = {}
+            deepCopy(newObj[k], oldObj[k])
+          } else {
+            // k属性名 oldObj[i]属性值
+            newObj[k] = oldObj[k]
+          }
+        }
+      }
+      deepCopy(o, obj)
+
+      o.age = 20
+      o.hobby = ['篮球']
+      console.log(obj)
+      console.log(o)
+    </script>
+  </body>
+</html>

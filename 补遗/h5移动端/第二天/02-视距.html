@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>透视效果</title>
+    <style>
+      .father {
+        /* 设置直接父元素的透视距离 */
+        /* 近大远小 800-1200 太大了效果不明显 太小了太吓人 */
+        perspective: 1000px;
+      }
+      .son {
+        width: 200px;
+        height: 200px;
+        margin: 100px auto;
+        background-color: pink;
+        transition: all 0.5s;
+      }
+
+      .son:hover {
+        transform: translateZ(-300px);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="father">
+      <div class="son"></div>
+    </div>
+  </body>
+</html>

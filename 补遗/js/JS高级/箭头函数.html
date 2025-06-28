@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // console.log(this) //windows
+      // function fn() {
+      //   console.log(this)
+      // }
+      // fn() //windows
+
+      // const obj = {
+      //   name: 'andy',
+      //   sayHi: function () {
+      //     console.log(this)
+      //   }
+      // }
+      // obj.sayHi() //obj
+
+      //箭头函数的this
+      // const fn = () => {
+      //   console.log(this)
+      // }
+      // fn() //找的上一层 window
+
+      // 对象方法的箭头函数this
+      // const obj = {
+      //   name: 'pink老师',
+      //   sayHi: () => {
+      //     console.log(this) //找上一层的obj的this  Window.obj
+      //   }
+      // }
+      // obj.sayHi()
+
+      const obj = {
+        uname: 'andy',
+        sayHi: function () {
+          console.log(this)
+          const count = () => {
+            console.log(this)
+          }
+        }
+      }
+      obj.sayHi() //obj
+    </script>
+  </body>
+</html>

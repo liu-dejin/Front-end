@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 解构的语法
+      // 不能和外面的变量名冲突
+      // 属性名和变量名一致,顺序哭不停,不一致就undefined
+      // const { age, uname } = {
+      //   uname: 'ldj',
+      //   age: 18
+      // }
+      // console.log(uname)
+      // console.log(age)
+
+      //变量名可以改  旧变量名:新变量名
+      // const { uname: username, age } = {
+      //   uname: 'ldj',
+      //   age: 18
+      // }
+      // console.log(username)
+
+      // 数组对象解构
+      // const pig = [
+      //   {
+      //     uname: 'ldj',
+      //     age: 18
+      //   }
+      // ]
+      // const [{ uname, age }] = pig
+      // console.log(uname)
+      // console.log(age)
+
+      // 多级对象解构
+      // const pig = {
+      //   name: {
+      //     main: 'ldj',
+      //     small: 'jin'
+      //   },
+      //   age: 18
+      // }
+      // const {
+      //   name: { main, small },
+      //   age
+      // } = pig
+      // console.log(main)
+      // console.log(small)
+
+      const person = [
+        {
+          name: '佩奇',
+          family: {
+            mother: '猪妈妈',
+            faerther: '猪爸爸',
+            son: '乔治'
+          },
+          age: 17
+        }
+      ]
+      const [
+        {
+          name,
+          family: { mother, faerther, son },
+          age
+        }
+      ] = person
+      console.log(mother, faerther, son )
+    </script>
+  </body>
+</html>
